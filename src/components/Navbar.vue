@@ -9,11 +9,11 @@
       <v-spacer></v-spacer>
       <v-btn text color="grey">
         <span>Sign Out</span>
-        <v-icon right>mdi-exit-to-app</v-icon>
+        <v-icon right>exit-to-app</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-navigation-drawer v-model="drawer" app class="indigo">
-      <p>test</p>
+    <v-navigation-drawer v-model="drawer" app class="primary">
+      <p class="info">test</p>
     </v-navigation-drawer>
   </nav>
 </template>
