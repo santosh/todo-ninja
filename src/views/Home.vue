@@ -1,29 +1,11 @@
 <template>
   <div class="home">
     <h1>Homepage</h1>
-    <v-btn class="pink white--text">click me</v-btn>
-    <v-btn depressed dark color="pink">click me again</v-btn>
-    <v-btn text color="pink">click me</v-btn>
-    <v-btn text class="pink white--text">
-      <v-icon left>mdi-email</v-icon>
-      <span>email me</span>
-    </v-btn>
-
-    <v-btn text small class="pink white--text">
-      <v-icon left>mdi-email</v-icon>
-      <span>email me</span>
-    </v-btn>
-
-    <v-btn text large class="pink white--text">
-      <span>email me</span>
-      <v-icon right large>mdi-email</v-icon>
-    </v-btn>
-
-    <v-btn text small dark fab color="purple">
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
+    <v-btn class="hidden-md-and-down">will show on md and up</v-btn>
+    <v-btn class="hidden-md-and-up">will show md and down</v-btn>
+    <v-btn class="hidden-xs-only">hidden on xs only</v-btn>
   </div>
-</template>
+</template> 
 
 <script>
 // @ is an alias to /src
