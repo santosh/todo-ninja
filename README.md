@@ -1,33 +1,31 @@
-# todo-ninj
+# todo-ninja
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/734699e2-4cfa-4ec6-92c3-08329433967e/deploy-status)](https://app.netlify.com/sites/todo-ninja/deploys)
 
-<https://todo-ninja.netlify.app/a
+A todo app written in Vue and Material Design. I did this project to get familiar with Vuetify framework which uses Material Design. 
+
+Live site: <https://todo-ninja.netlify.app>
+
+<!-- Add screenshot here -->
+
+## Tutorial
+
+Follow the tutorial at [The Net Ninja Vuetify Playlist](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g0MQZfHwKcuB0Yswgb3gA5).
+
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Other npm scripts: 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- `npm run serve` - Compiles and hot-reloads for development
 
-### Lints and fixes files
-```
-npm run lint
-```
+- `npm run build` - Compiles and minifies for production
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- `npm run lint` - Lints and fixes files
 
 
-### Tutorial
+See also Vuejs [Configuration](https://cli.vuejs.org/config/).
 
-Follow the tutorial at <https://www.youtube.com/playlist?list=PL4cUxeGkcC9g0MQZfHwKcuB0Yswgb3gA5>
