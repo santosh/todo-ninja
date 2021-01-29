@@ -40,7 +40,7 @@
       </v-layout>
 
       <v-card
-        flat
+        text
         class="pa-3"
         v-for="project in projects"
         :key="project.title"
