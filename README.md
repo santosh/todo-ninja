@@ -1,4 +1,8 @@
-# todo-ninja
+# todo-ninj
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/734699e2-4cfa-4ec6-92c3-08329433967e/deploy-status)](https://app.netlify.com/sites/todo-ninja/deploys)
+
+<https://todo-ninja.netlify.app/a
 
 ## Project setup
 ```
