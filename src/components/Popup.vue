@@ -71,6 +71,7 @@ export default {
       if (this.$refs.form.validate()) {
         this.loading = true;
 
+        // constructing object to send to firebase
         const project = {
           title: this.title,
           content: this.content,
@@ -84,6 +85,7 @@ export default {
           .then(() => {
             this.loading = false;
             this.dialog = false;
+            this.$emit('projectAdded');
           });
       }
     },

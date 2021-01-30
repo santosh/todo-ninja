@@ -1,5 +1,9 @@
 <template>
   <nav>
+    <v-snackbar v-model="snackbar" :timeout="4000" top color="success">
+      <span>Awesome! You added a new project.</span>
+      <v-btn text color="white" @click="snackbar = false">Close</v-btn>
+    </v-snackbar>
 
     <v-app-bar app text class="grey lighten-4">
       <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer"></v-app-bar-nav-icon>
@@ -51,7 +55,7 @@
           <p class="white--text subheading mt-1">The Net Ninja</p>
         </v-flex>
         <v-flex class="mt-4 mb-4">
-          <Popup />
+          <Popup @projectAdded="snackbar = true" />
         </v-flex>
       </v-layout>
       <v-list>
@@ -81,7 +85,8 @@
           { icon: 'dashboard', text: 'Dashboard', route: '/'},
           { icon: 'folder', text: 'My Projects', route: '/projects'},
           { icon: 'person', text: 'Team', route: '/team'},
-        ]
+        ],
+        snackbar: false
       }
     }
   }
