@@ -7,7 +7,34 @@
         <span class="font-weight-light">Todo</span>
         <span>Ninja</span>
       </v-toolbar-title>
+
       <v-spacer></v-spacer>
+
+      <div class="text-center">
+        <v-menu text offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              color="primary"
+              dark
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon left>expand_more</v-icon>
+              <span>Menu</span>
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item
+              v-for="(link, index) in links"
+              :key="index"
+              router :to="link.route"
+            >
+              <v-list-item-title>{{ link.text }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </div>
+
       <v-btn text color="grey">
         <span>Sign Out</span>
         <v-icon right>exit-to-app</v-icon>
